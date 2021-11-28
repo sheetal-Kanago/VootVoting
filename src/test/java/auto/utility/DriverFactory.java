@@ -23,8 +23,9 @@ public class DriverFactory {
             browser = "chrome";
         logger.info("# WebDriver instance for browser: " + browser);
 
-        if (browser.equalsIgnoreCase("chrome"))
-            return new ChromeDriver();
+        if (browser.equalsIgnoreCase("chrome")){
+            System.setProperty("webdriver.chrome.driver","C:\\Users\\Sheetal\\Voting\\drivers\\chromedriver.exe");
+            return new ChromeDriver();}
         else if (browser.equalsIgnoreCase("ie"))
             return new InternetExplorerDriver();
         else {

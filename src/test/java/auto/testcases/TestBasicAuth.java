@@ -11,7 +11,8 @@ public class TestBasicAuth extends Init {
 
     @Test
     public void testBasicAuth() throws InterruptedException {
-        driver.get("https://admin:admin@the-internet.herokuapp.com/basic_auth");
+        driver.get("https://www.moneycontrol.com/");
+
         BasicAuthPage basicAuthPage = new BasicAuthPage(driver);
         String actual = basicAuthPage.getHeading();
         assertEquals(actual, HEADING);

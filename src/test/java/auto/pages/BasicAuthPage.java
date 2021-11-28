@@ -10,8 +10,10 @@ public class BasicAuthPage {
     private static Logger logger = getLogger(BasicAuthPage.class);
     Services services;
 
-    public static final String HEADING = "Basic Auth";
-    String xpathHeading = "//h3";
+//    <a href="javascript:;" title="Hello, Login" class="userlink"></a>
+
+    public static final String HEADING = "Hello, Login";
+    String xpathHeading = "//a[@class='userlink']";
 
     public BasicAuthPage(WebDriver driver) {
         this.services = new Services(driver);
